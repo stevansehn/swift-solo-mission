@@ -1,0 +1,50 @@
+# Xcode
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+Packages/
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Build generated files
+build/
+*.app
+*.app.dSYM
+*.ipa
+*.dSYM.zip
+
+# Code coverage
+*.xccovreport
+*.xccovarchive
+
+# Temporary files
+*.tmp
+*.temp
+
+# macOS specific
+.DS_Store
+*.swp
+*.lock
+*.xcuserdatad/
