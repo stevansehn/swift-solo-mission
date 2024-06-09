@@ -40,7 +40,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func random() -> CGFloat {
-//        return CGFloat(Float(arc4random()) / Float(0xFFFFFFFF))
         return CGFloat(arc4random()) / CGFloat(UInt32.max)
     }
     func random(min: CGFloat, max: CGFloat) -> CGFloat {
@@ -151,8 +150,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    
-    
     func startGame() {
         
         currentGameState = gameState.inGame
@@ -239,31 +236,37 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             body2 = contact.bodyA
         }
         
-        if body1.categoryBitMask == PhysicsCategories.Player && body2.categoryBitMask == PhysicsCategories.Enemy {
+        if body1.categoryBitMask == PhysicsCategories.Player && 
+           body2.categoryBitMask == PhysicsCategories.Enemy,
+           let node1 = body1.node,
+           let node2 = body2.node {
             
-            if body1.node != nil {
-                spawnExplositon(spawnPosition: body1.node!.position)
+            spawnExplositon(spawnPosition: node1.position)
+            loseALife()
+            spawnExplositon(spawnPosition: node2.position)
+            
+            node1.removeFromParent()
+            node2.removeFromParent()
+            
+            if livesNumber == 0 {
+                runGameOver()
+            } else {
+                spawnPlayer()
             }
-            if body2.node != nil {
-                spawnExplositon(spawnPosition: body2.node!.position)
-            }
-            
-            body1.node?.removeFromParent()
-            body2.node?.removeFromParent()
-            
-            runGameOver()
-            
+
         }
         
-        if body1.categoryBitMask == PhysicsCategories.Bullet && body2.categoryBitMask == PhysicsCategories.Enemy && (body2.node?.position.y)! < self.size.height {
+        if body1.categoryBitMask == PhysicsCategories.Bullet &&
+           body2.categoryBitMask == PhysicsCategories.Enemy,
+           let node1 = body1.node,
+           let node2 = body2.node,
+           node2.position.y < self.size.height {
             
             addScore()
-            
-            if body2.node != nil {
-                spawnExplositon(spawnPosition: body2.node!.position)
-            }
-            body1.node?.removeFromParent()
-            body2.node?.removeFromParent()
+            spawnExplositon(spawnPosition: node2.position)
+
+            node1.removeFromParent()
+            node2.removeFromParent()
             
         }
     }
@@ -330,6 +333,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let spawnSequence = SKAction.sequence([waitToSpawn, spawn])
         let spawnForever = SKAction.repeatForever(spawnSequence)
         self.run(spawnForever, withKey: "spawningEnemies")
+        
+    }
+    
+    func spawnPlayer() {
+        
+        player.setScale(1)
+        player.position = CGPoint(x: self.size.width / 2, y: 0 - player.size.height)
+        player.zPosition = 2
+        player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
+        player.physicsBody!.affectedByGravity = false
+        player.physicsBody!.categoryBitMask = PhysicsCategories.Player
+        player.physicsBody!.collisionBitMask = PhysicsCategories.None
+        player.physicsBody!.contactTestBitMask = PhysicsCategories.Enemy
+        self.addChild(player)
+        
+        let moveShipOnToScreenAction = SKAction.moveTo(y: self.size.height * 0.2, duration: 0.5)
+        player.run(moveShipOnToScreenAction)
         
     }
     

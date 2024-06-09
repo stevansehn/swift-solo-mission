@@ -51,7 +51,7 @@ class MainMenuScene: SKScene {
         self.addChild(startGame)
         
         let revisedBy = SKLabelNode(fontNamed: "The Bold Font")
-        revisedBy.text = "Revised and Adapted by Stevan Sehn"
+        revisedBy.text = "Revised and adapted by Stevan Sehn"
         revisedBy.fontSize = 25
         revisedBy.fontColor = SKColor.white
         revisedBy.position = CGPoint(x: self.size.width * 0.5, y: self.size.height * 0.2)

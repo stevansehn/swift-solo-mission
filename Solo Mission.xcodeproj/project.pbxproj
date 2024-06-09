@@ -19,12 +19,16 @@
 		F2CC18F72BF7C83900C4B508 /* Solo_MissionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CC18F62BF7C83900C4B508 /* Solo_MissionUITests.swift */; };
 		F2CC18F92BF7C83900C4B508 /* Solo_MissionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CC18F82BF7C83900C4B508 /* Solo_MissionUITestsLaunchTests.swift */; };
 		F2CC19082BF94C2500C4B508 /* bulletSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = F2CC19072BF94C2500C4B508 /* bulletSoundEffect.wav */; };
-		F2CC190F2C0FBF1A00C4B508 /* theBoldFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2CC190E2C0FBF1A00C4B508 /* theBoldFont.ttf */; };
 		F2CC19112C0FEB9000C4B508 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CC19102C0FEB9000C4B508 /* GameOverScene.swift */; };
 		F2CC19132C14D5CE00C4B508 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CC19122C14D5CE00C4B508 /* MainMenuScene.swift */; };
 		F2CC19152C14DD1400C4B508 /* BackingAudio.wav in Resources */ = {isa = PBXBuildFile; fileRef = F2CC19142C14DD1400C4B508 /* BackingAudio.wav */; };
 		F2CC19182C14F66900C4B508 /* explosionSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = F2CC19172C14F66900C4B508 /* explosionSoundEffect.wav */; };
 		F2CC191A2C15067800C4B508 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F2CC19192C15067800C4B508 /* .gitignore */; };
+		F2DA92992C15EF54005A8620 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F2DA92982C15EF53005A8620 /* LICENSE.txt */; };
+		F2DA929B2C15EF5E005A8620 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F2DA929A2C15EF5E005A8620 /* README.md */; };
+		F2DA92A72C15FF53005A8620 /* main_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DA92A42C15FF53005A8620 /* main_menu.png */; };
+		F2DA92A82C15FF53005A8620 /* game_over.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DA92A52C15FF53005A8620 /* game_over.png */; };
+		F2DA92A92C15FF53005A8620 /* gameplay.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DA92A62C15FF53005A8620 /* gameplay.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +65,17 @@
 		F2CC18F82BF7C83900C4B508 /* Solo_MissionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo_MissionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F2CC19072BF94C2500C4B508 /* bulletSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bulletSoundEffect.wav; sourceTree = "<group>"; };
 		F2CC190D2C0FBEAA00C4B508 /* Solo-Mission-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Solo-Mission-Info.plist"; sourceTree = SOURCE_ROOT; };
-		F2CC190E2C0FBF1A00C4B508 /* theBoldFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = theBoldFont.ttf; path = the_bold_font/theBoldFont.ttf; sourceTree = "<group>"; };
 		F2CC19102C0FEB9000C4B508 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		F2CC19122C14D5CE00C4B508 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		F2CC19142C14DD1400C4B508 /* BackingAudio.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BackingAudio.wav; sourceTree = "<group>"; };
 		F2CC19172C14F66900C4B508 /* explosionSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosionSoundEffect.wav; sourceTree = "<group>"; };
 		F2CC19192C15067800C4B508 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F2DA92972C15EBB2005A8620 /* theBoldFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = theBoldFont.ttf; sourceTree = "<group>"; };
+		F2DA92982C15EF53005A8620 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F2DA929A2C15EF5E005A8620 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F2DA92A42C15FF53005A8620 /* main_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu.png; sourceTree = "<group>"; };
+		F2DA92A52C15FF53005A8620 /* game_over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_over.png; sourceTree = "<group>"; };
+		F2DA92A62C15FF53005A8620 /* gameplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameplay.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +106,12 @@
 		F2CC18C62BF7C83700C4B508 = {
 			isa = PBXGroup;
 			children = (
+				F2DA92A52C15FF53005A8620 /* game_over.png */,
+				F2DA92A62C15FF53005A8620 /* gameplay.png */,
+				F2DA92A42C15FF53005A8620 /* main_menu.png */,
 				F2CC19192C15067800C4B508 /* .gitignore */,
+				F2DA92982C15EF53005A8620 /* LICENSE.txt */,
+				F2DA929A2C15EF5E005A8620 /* README.md */,
 				F2CC18D12BF7C83700C4B508 /* Solo Mission */,
 				F2CC18EB2BF7C83900C4B508 /* Solo MissionTests */,
 				F2CC18F52BF7C83900C4B508 /* Solo MissionUITests */,
@@ -125,7 +139,7 @@
 				F2CC18D82BF7C83700C4B508 /* GameScene.swift */,
 				F2CC19122C14D5CE00C4B508 /* MainMenuScene.swift */,
 				F2CC19102C0FEB9000C4B508 /* GameOverScene.swift */,
-				F2CC190E2C0FBF1A00C4B508 /* theBoldFont.ttf */,
+				F2DA92972C15EBB2005A8620 /* theBoldFont.ttf */,
 				F2CC19172C14F66900C4B508 /* explosionSoundEffect.wav */,
 				F2CC19142C14DD1400C4B508 /* BackingAudio.wav */,
 				F2CC19072BF94C2500C4B508 /* bulletSoundEffect.wav */,
@@ -259,14 +273,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2CC191A2C15067800C4B508 /* .gitignore in Resources */,
+				F2DA92A82C15FF53005A8620 /* game_over.png in Resources */,
+				F2DA92A72C15FF53005A8620 /* main_menu.png in Resources */,
 				F2CC18D52BF7C83700C4B508 /* GameScene.sks in Resources */,
 				F2CC18DE2BF7C83700C4B508 /* Base in Resources */,
 				F2CC18E02BF7C83900C4B508 /* Assets.xcassets in Resources */,
-				F2CC190F2C0FBF1A00C4B508 /* theBoldFont.ttf in Resources */,
 				F2CC19152C14DD1400C4B508 /* BackingAudio.wav in Resources */,
 				F2CC18D72BF7C83700C4B508 /* Actions.sks in Resources */,
 				F2CC18E32BF7C83900C4B508 /* Base in Resources */,
+				F2DA92A92C15FF53005A8620 /* gameplay.png in Resources */,
 				F2CC19082BF94C2500C4B508 /* bulletSoundEffect.wav in Resources */,
+				F2DA92992C15EF54005A8620 /* LICENSE.txt in Resources */,
+				F2DA929B2C15EF5E005A8620 /* README.md in Resources */,
 				F2CC19182C14F66900C4B508 /* explosionSoundEffect.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
