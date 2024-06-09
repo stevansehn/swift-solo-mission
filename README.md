@@ -26,7 +26,9 @@ Backing music: https://freesound.org/people/XHALE303/sounds/473915/
 
 ## Screenshots
 
-![Main Menu](./main_menu.png)
-![Gameplay](./gameplay.png)
-![Gameover](./game_over.png)
-
+<!--![Main Menu](./main_menu.png)-->
+<!--![Gameplay](./gameplay.png)-->
+<!--![Gameover](./game_over.png)-->
+<img src="main_menu.png" width="200">
+<img src="gameplay.png" width="200">
+<img src="game_over.png" width="200">
